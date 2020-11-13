@@ -4,50 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/img.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" 
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <script src="./JS/index.js"></script>
     <title>Portero Electrico JS</title>
 </head>
 <body>
 <div class="container-fluid">
 
-        <div style="text-align: center; padding-bottom: 150px;">
+        <div>
             <h1>Portero Electrico</h1>
         </div>
 
-        <div class="row" style="text-align: center;">
+
+        <div class="row">
             
             <div class="col-sm-12" >
-                <input id="piso" type="text" style="width: 235px; height: 50px;" class="form-controll pill-input" readonly="readonly" placeholder="Piso"></input>
-                <input id="dpto" type="text" style="width: 235px; height: 50px;" class="form-controll pill-input" readonly="readonly" placeholder="Dpto"></input>
+                
+                <input class="visor1" id="piso" type="text" style="width: 235px; height: 50px;" placeholder="Piso"></input>
+               
+                <input class="visor1" id="dpto" type="text" style="width: 235px; height: 50px;" placeholder="Dpto"></input>
             </div>
 
+           
+
             <div class="col-sm-12" >
-                <button type="button" id="btn-1"  style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="PushButton(1);">1</button>
-                <button type="button" id="btn-2"  style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="PushButton(2);">2</button>
-                <button type="button" id="btn-3"  style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="PushButton(3);">3</button>
+                <button type="button" id="btn-1"  class="round-button-piso mt-1 ml-1" onclick="PisoButton(1);">1</button>
+                <button type="button" id="btn-1"  class="round-button mt-1 ml-1" onclick="DptoButton(1);">1</button>
+                <button type="button" id="btn-2"  class="round-button mt-1 ml-1" onclick="DptoButton(2);">2</button>
+                <button type="button" id="btn-3"  class="round-button mt-1 ml-1" onclick="DptoButton(3);">3</button>
             </div>    
 
             <div class="col-sm-12">
-                <button type="button" id="btn-4"  style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="PushButton(4);">4</button>
-                <button type="button" id="btn-5"  style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="PushButton(5);">5</button>
-                <button type="button" id="btn-6"  style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="PushButton(6);">6</button>
+                <button type="button" id="btn-1"  class="round-button-piso mt-1 ml-1" onclick="PisoButton(2);">2</button>
+                <button type="button" id="btn-4"  class="round-button mt-1 ml-1" onclick="DptoButton(4);">4</button>
+                <button type="button" id="btn-5"  class="round-button mt-1 ml-1" onclick="DptoButton(5);">5</button>
+                <button type="button" id="btn-6"  class="round-button mt-1 ml-1" onclick="DptoButton(6);">6</button>
             </div>    
         
             <div class="col-sm-12">
-                <button type="button" id="btn-7"  style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="PushButton(7);">7</button>
-                <button type="button" id="btn-8"  style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="PushButton(8);">8</button>
-                <button type="button" id="btn-9"  style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="PushButton(9);">9</button>
+                <button type="button" id="btn-1"  class="round-button-piso mt-1 ml-1" onclick="PisoButton(3);">3</button>
+                <button type="button" id="btn-7"  class="round-button mt-1 ml-1" onclick="DptoButton(7);">7</button>
+                <button type="button" id="btn-8"  class="round-button mt-1 ml-1" onclick="DptoButton(8);">8</button>
+                <button type="button" id="btn-9"  class="round-button mt-1 ml-1" onclick="DptoButton(9);">9</button>
             </div>    
         
             <div class="col-sm-12">
-                <button type="button" id="llamar" style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="llamar();">LLAMAR</button>
-                <button type="button" id="btn-0" style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="PushButton(0);">0</button>
-                <button type="button" id="borrar" style="width: 150px; height: 50px;" class="btn btn-outline-dark btn-lg mt-3 ml-3" onclick="borrar();">BORRAR</button>
+                <button type="button" id="btn-1"  class="round-button-piso mt-1 ml-1" onclick="PisoButton(4);">4</button>
+                <button type="button" id="llamar" class="round-button mt-1 ml-1" onclick="llamar();">llamar</button>
+                <button type="button" id="btn-0" class="round-button mt-1 ml-1" onclick="DptoButton(0);">0</button>
+                <button type="button" id="borrar" class="round-button mt-1 ml-1" onclick="borrar();">borrar</button>
             </div>  
             
-            <div class="col-sm-12 mt-3" >
-                <input id="llamar" type="text" style="width: 235px; height: 50px;" class="form-controll pill-input" readonly="readonly" placeholder="Piso - Depto"></input>
+            <div class="visor">
+                <input class="visor1" id="mensaje" placeholder="Por favor, indique piso y departamento" readonly>
             </div>
+
+            <span  id ="mensaje1"> </span>
+            <span  id ="mensaje2"> </span>
+
         </div>
 
 
